@@ -386,6 +386,7 @@ h3.my-profession{
 }
 
 .about .about-content .personal-info .info-item p span{
+    font-size: 15px;
     font-weight: 400;
     color: var(--text-black-700);
     margin-left: 4px;
@@ -643,6 +644,11 @@ h3.my-profession{
     font-weight: 600;
     font-size: 22px;
     /* color: var(--skin-color); */
+}
+
+.portfolio .container .btn a{
+    
+    color: var(--text-black-900);
 }
 
 
