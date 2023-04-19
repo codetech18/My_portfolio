@@ -640,6 +640,8 @@ h3.my-profession{
 }
 
 .portfolio .portfolio-item .portfolio-text i{
+    margin-left: 60px;
+    text-transform: capitalize;
     color: var(--text-black-900);
     font-weight: 600;
     font-size: 22px;
