@@ -48,6 +48,3 @@ window.addEventListener("load", () => {
 })
 
 
-window.onload = () => {
-    document.body.classList.toggle("dark");
-}

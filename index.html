@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/stle.css" />
     <link rel="stylesheet" href="css/skins/color-1.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- style switcher  -->
     <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled="">
@@ -51,7 +52,7 @@
             <section class="home section " id="home">
                 <div class="container">
                     <div class="row">
-                        <div class="home-info">
+                        <div class="home-info"  data-aos="fade-in"  >
                             <h3 class="hello">
                                 Hello, my name is <span class="name">Alao Akorede</span>
                             </h3>
@@ -59,47 +60,45 @@
                                 I'm a <span class="typing">Software Engineer</span>
                             </h3>
                             <p>
-                                Hi I'm a web developer with a software Engineering degree in veiw.
+                                Hi I'm a Frontend Engineer  <br>
                                 This is my portfolio which contains my projects and my bio
                                 feel free to look around.......
                             </p>
                             <a href="#contact" class="btn hire-me">Hire Me</a>
                         </div>
-                        <div class="home-img padd-15">
+                        <div class="home-img padd-15" data-aos="fade-left" >
                             <img src="images/C8BC6FF1-6202-4088-84B8-1BB53808A5DB.JPG" alt="" />
                         </div>
                     </div>
                 </div>
             </section>
             <!-- About section start -->
-            <section class="about section " id="about">
-                <div class="container">
+            <section class="about section " id="about" >
+                <div class="container " >
                     <div class="row">
-                        <div class="section-title padd-15">
+                        <div class="section-title padd-15" data-aos="fade-left" >
                             <h2>About Me</h2>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
+                    <div class="row" >
+                        <div class="about-content padd-15" >
+                            <div class="row" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="50000">
                                 <div class="about-text padd-15">
                                     <h3>
-                                        I'm Alao Akorede a <span>Web Developer</span>
+                                        I'm Alao Akorede a <span>software/Frontend Engineer</span>
                                     </h3>
                                     <p>
                                         I'm an ambitious frontend engineer with a passion for designing and 
                                         developing exceptional user experiences. With extensive experience working 
-                                        on personal and group projects, I'm skilled in HTML, CSS, and JavaScript, as
-                                        well as Bootstrap, Git, and SQL. Whether it's building responsive websites, 
+                                        on personal and group projects,and a proven track record of transforming concepts into pixelperfect
+                                        reality that not only meet but exceed user expectations. Whether it's building responsive websites, 
                                         optimizing page load times, or debugging complex code, I'm always up for a
-                                        challenge. I'm currently studying at NIIT, where I'm expanding my knowledge 
-                                        and honing my skills in web development. As a detail-oriented and collaborative 
-                                        team player, I thrive in fast-paced, dynamic environments. I'm excited to continue
+                                        challenge. my passion for innovation and commitment to clean, efficient code make me a driving force in the world of frontend development. I'm excited to continue
                                         growing as a developer and contributing my skills to innovative projects.
                                     </p>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row" data-aos="fade-in">
                                 <div class="personal-info padd-15">
                                     <div class="row">
                                         <div class="info-item padd-15">
@@ -129,6 +128,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
+                                            
                                             <a href="https://drive.google.com/uc?export=download&id=1Iutc6qnHvYSbjmZWeeyyC-pHqSZKvtsb"
                                                 class="btn">Download CV</a>
                                             <a href="#contact" class="btn hire-me">Hire Me</a>
@@ -138,55 +138,38 @@
                                 <div class="skills padd-15">
                                     <div class="row">
                                         <div class="skill-item padd-15">
-                                            <h5>Git/Github</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 76%"></div>
-                                                <div class="skill-percent"></div>
-                                            </div>
+                                            <h5>Programming languages: Javascrpit/Typescript</h5>
+                                            <h5>Markup/styling: Html,CSS, Tailwind</h5>
+                                            <h5>Frameworks/Libraries: React.js, Next.js</h5>
+                                            <h5>Version control: Git/Github</h5>
+                                            <h5>Problem solving, Strong communication skills</h5>
+                                            <h5>collaboration and Teamwork</h5>
+                                            
+                                            
                                         </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Javascrpit</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 66%"></div>
-                                                <div class="skill-percent"></div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>html/css</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 96%"></div>
-                                                <div class="skill-percent"></div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Bootstrap</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 46%"></div>
-                                                <div class="skill-percent"></div>
-                                            </div>
-                                        </div>
+                                       
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="education padd-15">
-                                    <h3 class="title">Core Skils and Competence</h3>
+                                <!-- <div class="education padd-15" data-aos="fade-right" >
+                                    <h3 class="title">Education and Experience</h3>
                                     <div class="row">
                                         <div class="timeline-box padd-15">
                                             <div class="timeline shadow-dark">
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <!-- <i class="fa fa-calendar"></i>2019-2022 -->
+                                                        <i class="fa fa-calendar"></i>2019-2022
                                                     </h3>
                                                     <h4 class="timeline-title"> In-depth knowledge of programming
                                                         languages, web development, software engineering, and
                                                         coding.</h4>
-                                                    <!-- <p class="timeline-text">Lorem ipsum dolor sit amet consectetur
+                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur
                                                         adipisicing elit.
                                                         Voluptas blanditiis voluptate, perferendis doloremque iste
                                                         sit aut aspernatur? Saepe, quod! Quibusdam doloremque in
-                                                        consequatur ipsam quas?</p> -->
+                                                        consequatur ipsam quas?</p>
                                                 </div>
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
@@ -228,8 +211,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="experience padd-15">
+                                </div> -->
+                                <div class="experience padd-15" data-aos="fade-right" >
                                     <h3 class="title">Education and Experience</h3>
                                     <div class="row">
                                         <div class="timeline-box padd-15">
@@ -237,12 +220,65 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>|06-2020 – 09-2022|
+                                                        <i class="fa fa-calendar"></i>|10-2023 – Present|
                                                     </h3>
-                                                    <h4 class="timeline-title">SOFTWARE INTERN KONGA</h4>
-                                                    <p class="timeline-text">1. Worked on the development of software
-                                                        platforms, tested software products, and reported test
-                                                        results to supervisors.</p>
+                                                    <h4 class="timeline-title">Frontend Developer ReadersPlug </h4>
+                                                    <p class="timeline-text">1. Assisted in forntend development tasks using React and Typescript.</p>
+                                                    <p class="timeline-text">2. Collaborated with colleagues on the
+                                                        creations of apis which helped increase
+                                                        overall efficiency and transparency.</p>
+                                                    <p class="timeline-text">3. Designed web pages and provided
+                                                        beneficial IT support and assistance to other employees;
+                                                        performed other duties as assigned by managers.
+                                                    </p>
+                                                    <p class="timeline-text">4. Created and implemented unit tests to
+                                                        ensure code quality and identify bugs early in the
+                                                        development process.</p>
+                                                    <!-- <p class="timeline-text">5. Developed code for software applications
+                                                        using multiple programming languages</p> -->
+
+                                                </div>
+                                                <br>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>|09-2023 – Present|
+                                                    </h3>
+                                                    <h4 class="timeline-title">Frontend Developer DongMi </h4>
+                                                    <p class="timeline-text">1. worked closely with the development team to Build the ui of the company's site</p>
+                                                    <p class="timeline-text">2. Collaborated with colleagues to  Build a chatbot web app that interacts with customers.</p>
+                                                    <p class="timeline-text">3. Participated in code reviews and provided constructive feedbacks to team members.
+                                                    </p>
+                                                    <p class="timeline-text">4. Maintained web applications using react, Typescript and Tailwind.</p>
+                                                    <!-- <p class="timeline-text">5. Developed code for software applications
+                                                        using multiple programming languages</p> -->
+
+                                                </div>
+                                                <!-- <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>|Diploma (Honours)|
+                                                    </h3>
+                                                    <h4 class="timeline-title">SOFTWARE ENGINEERING </h4>
+                                                    <p class="timeline-text">NIIT Institute, Ikeja, Lagos State.
+                                                    </p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15" data-aos="fade-left" >
+                                    <h3 class="title">Education and Experience</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <!-- <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>|06-2020 – 09-2022|
+                                                    </h3> -->
+                                                    <h4 class="timeline-title">Freelance</h4>
+                                                    <p class="timeline-text">1.Implemented responsive layouts and optimized performance for improved user experience .</p>
                                                     <p class="timeline-text">2. Collaborated with colleagues on the
                                                         creation of a new SQL database which helped increase
                                                         overall efficiency and transparency.</p>
@@ -269,7 +305,7 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>|IN VIEW|
+                                                        <i class="fa fa-calendar"></i>|Diploma (Honours)|
                                                     </h3>
                                                     <h4 class="timeline-title">SOFTWARE ENGINEERING </h4>
                                                     <p class="timeline-text">NIIT Institute, Ikeja, Lagos State.
@@ -289,13 +325,13 @@
             <section class="service section " id="service">
                 <div class="container">
                     <div class="row">
-                        <div class="section-title padd-15">
+                        <div class="section-title padd-15" data-aos="fade-in" >
                             <h2>Services</h2>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                        <div class="service-item padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="50">
+                            <div class="service-item-inner" >
                                 <div class="icon">
                                     <i class="fa fa-search"></i>
                                 </div>
@@ -304,7 +340,7 @@
                                     specific purposes.</p>
                             </div>
                         </div>
-                        <div class="service-item padd-15">
+                        <div class="service-item padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="50">
                             <div class="service-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-laptop-code"></i>
@@ -313,7 +349,7 @@
                                 <p>web design refers to the design of websites that are displayed on the internet.</p>
                             </div>
                         </div>
-                        <div class="service-item padd-15">
+                        <div class="service-item padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="50">
                             <div class="service-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-palette"></i>
@@ -323,7 +359,7 @@
                                     browser</p>
                             </div>
                         </div>
-                        <div class="service-item padd-15">
+                        <div class="service-item padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="50">
                             <div class="service-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-code"></i>
@@ -333,7 +369,7 @@
                                     and maintaining applications </p>
                             </div>
                         </div>
-                        <div class="service-item padd-15">
+                        <div class="service-item padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="50">
                             <div class="service-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-mobile-alt"></i>
@@ -342,7 +378,7 @@
                                 <p>Designing and implementing website/web app for the smallest screen sizes</p>
                             </div>
                         </div>
-                        <div class="service-item padd-15">
+                        <div class="service-item padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="50">
                             <div class="service-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-bullhorn"></i>
@@ -359,7 +395,7 @@
             <!-- portfolio section start -->
             <section class="portfolio section " id="portfolio">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" data-aos="fade-in" >
                         <div class="section-title padd-15">
                             <h2>Portfolio</h2>
                         </div>
@@ -370,7 +406,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="portfolio-item padd-15">
+                        <div class="portfolio-item padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="50">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="images/Movie-website.png" alt="">
@@ -382,18 +418,18 @@
                             </div>
                         </div>
 
-                        <div class="portfolio-item padd-15">
+                        <div class="portfolio-item padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="100">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="images/portfolio/Screenshot 2022-12-21 070357.png" alt="">
                                 </div>
                                 <div class="portfolio-text"></div>
                             </div>
-                            <div class="portfolio-text padd-15">
+                            <div class="portfolio-text padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="400">
                                 <a href="https://keen-maamoul-721e8e.netlify.app/"><i>BSS Company Website</i></a>
                             </div>
                         </div>
-                        <div class="portfolio-item padd-15">
+                        <div class="portfolio-item padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="100">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="images/portfolio/Screenshot 2022-12-21 071432.png" alt="">
@@ -404,39 +440,39 @@
                                         checker</i></a>
                             </div>
                         </div>
-                        <div class="portfolio-item padd-15">
+                        <div class="portfolio-item padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="120">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="images/portfolio/code-educa.png" alt="">
                                 </div>
                             </div>
-                            <div class="portfolio-text padd-15">
+                            <div class="portfolio-text padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="140">
                                 <a href="https://code-educa.netlify.app/"><i>school/Education website</i></a>
                             </div>
                         </div>
-                        <div class="portfolio-item padd-15">
+                        <div class="portfolio-item padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="160">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="images/portfolio/todo.png" alt="">
                                 </div>
                             </div>
-                            <div class="portfolio-text padd-15">
+                            <div class="portfolio-text padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="180">
                                 <a href="https://codetech-todo-list.netlify.app/"><i>TodoList
                                         </i></a>
                             </div>
                         </div>
-                        <div class="portfolio-item padd-15">
+                        <div class="portfolio-item padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="200">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="images/Screenshot 2023-01-19 031225.png" alt="">
                                 </div>
                             </div>
-                            <div class="portfolio-text padd-15">
+                            <div class="portfolio-text padd-15" data-aos="flip-down" data-aos-duration="800" data-aos-delay="220">
                                 <a href="https://quiz-stopwatch-app.netlify.app/"><i>Quiz_stopwatch
                                         app</i></a>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" data-aos="fade-right" >
                             <div class="form-item col-12 padd-15">
                                 <button class="btn" type=""><a href="https://github.com/codetech18">See More</a></button>
                             </div>
@@ -449,7 +485,7 @@
             <!-- Contact section start -->
             <sectio class="contact section " id="contact">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" data-aos="fade-in" >
                         <div class="section-title padd-15">
                             <h2>Contact Me</h2>
                         </div>
@@ -530,7 +566,7 @@
         </div>
     </div>
     <!-- style-switcher start -->
-    <div class="style-switcher">
+    <!-- <div class="style-switcher">
         <div class="style-switcher-toggler s-icon">
             <i class="fas fa-cog fa-spin"></i>
         </div>
@@ -545,8 +581,18 @@
             <span class="color-4" onclick="setActiveStyle('color-4')"></span>
             <span class="color-5" onclick="setActiveStyle('color-5')"></span>
         </div>
-    </div>
+    </div> -->
     <!-- style-switcher end -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:"3000",
+        delay:"50000",
+        once: false,
+        useClassNames: true,
+        
+      });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
         referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
