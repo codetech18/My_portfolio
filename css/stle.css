@@ -18,7 +18,7 @@ body.dark {
 body {
   line-height: 1.5;
   font-size: 16px;
-  font-family: "Poppins" sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 * {
@@ -50,9 +50,9 @@ ul {
   display: none !important;
 }
 
-.main-content {
+/* .main-content {
   padding-left: 270px;
-}
+} */
 
 .padd-15 {
   padding-left: 15px;
@@ -77,10 +77,11 @@ ul {
 }
 
 .section-title h2 {
-  font-size: 75px;
+  font-size: 70px;
   color: var(--text-black-900);
   font-weight: 700;
   position: relative;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .section-title h2::before {
@@ -134,61 +135,36 @@ ul {
 }
 
 .aside {
-  width: 270px;
-  background: var(--bg-black-100);
+  width: 100%;
+  background: var(--bg-black-900);
   position: fixed;
   left: 0;
   top: 0;
   padding: 30px;
-  height: 100%;
+  height: 80px;
   border-right: 1px solid var(--bg-black-50);
+  padding-top: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   z-index: 10;
 }
 
 .aside .logo {
-  position: absolute;
-  top: 50px;
-  font-size: 30px;
+  /* position: absolute; */
+  /* top: 50px; */
+  font-size: 20px;
   text-transform: capitalize;
 }
 
 .aside .logo a {
   color: var(--text-black-900);
-  font-weight: 700;
+  font-weight: 500;
   padding: 15px, 20px;
   font-size: 30px;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   position: relative;
-}
-
-.aside .logo a span {
-  font-family: "Clicker script", cursive;
-  font-size: 50px;
-}
-
-.aside .logo a::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-bottom: 5px solid var(--skin-color);
-  border-left: 5px solid var(--skin-color);
-  bottom: -10px;
-  left: -10px;
-}
-
-.aside .logo a::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-top: 5px solid var(--skin-color);
-  border-right: 5px solid var(--skin-color);
-  top: -10;
-  right: -10;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .aside .nav-toggler {
@@ -235,25 +211,39 @@ ul {
 }
 
 .aside .nav {
-  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  /* margin-left: 25rem; */
 }
 
 .aside .nav li {
-  margin-bottom: 20px;
-  display: block;
+  display: flex;
+  justify-content: space-around;
 }
 
 .aside .nav li a {
   font-size: 16px;
   font-weight: 600;
-  display: block;
-  border-bottom: 1px solid var(--bg-black-50);
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* border-bottom: 4px solid var(--skin-color); */
   color: var(--text-black-900);
   padding: 5px 15px;
+  font-family: "Courier New", Courier, monospace;
+  transition: 0.3s linear;
+}
+.aside .nav li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  color: #f2f2fc;
+  background: var(--skin-color);
+  display: block;
+  transition: 0.3s linear;
 }
 
-.aside .nav li a.active {
-  color: var(--skin-color);
+.aside .nav li a:hover::after {
+  width: 100%;
 }
 
 .aside .nav li a i {
@@ -264,6 +254,7 @@ ul {
   min-height: 100vh;
   display: flex;
   color: var(--text-black-900);
+  padding-top: 6rem;
 }
 
 .home .home-info {
@@ -274,18 +265,20 @@ ul {
 h3.hello {
   font-size: 38px;
   margin: 15px 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h3.hello span {
-  /* font-family: 'Clicker Script', cursive; */
+  font-family: "Courier New", Courier, monospace;
   font-size: 35px;
   font-weight: 700;
   color: var(--skin-color);
 }
 
 h3.my-profession {
-  font-size: 30px;
+  font-size: 25px;
   margin: 15px 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .typing {
@@ -305,7 +298,14 @@ h3.my-profession {
   position: relative;
 }
 
-.home .home-img::after {
+.about-content .home-img {
+  flex: 0 0 40%;
+  max-width: 60%;
+  text-align: center;
+  position: relative;
+}
+
+/* .home .home-img::after {
   content: "";
   position: absolute;
   height: 80px;
@@ -315,9 +315,9 @@ h3.my-profession {
   border-radius: 8px;
   right: 20px;
   bottom: -40px;
-}
+} */
 
-.home .home-img::before {
+/* .home .home-img::before {
   content: "";
   position: absolute;
   height: 80px;
@@ -327,9 +327,20 @@ h3.my-profession {
   border-radius: 8px;
   left: 20px;
   top: -40px;
+} */
+
+.home .home-img.icons {
+  display: grid;
+  right: 5;
 }
 
-.home .home-img img {
+.home .home-img a i {
+  color: #ffffff;
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+.about-content .home-img img {
   margin: auto;
   border-radius: 8px;
   height: 400px;
@@ -342,8 +353,12 @@ h3.my-profession {
 }
 
 .about .about-content .about-text {
-  flex: 0 0 100%;
-  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .about-content .about-text .none {
+  align-content: center;
 }
 
 .about .about-content .about-text h3 {
@@ -351,6 +366,7 @@ h3.my-profession {
   margin-bottom: 15px;
   font-weight: 700;
   color: var(--text-black-900);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .about .about-content .about-text h3 span {
@@ -388,6 +404,15 @@ h3.my-profession {
   color: var(--text-black-700);
   margin-left: 4px;
   display: inline-block;
+}
+
+.about .about-content .personal-info .info-item p span {
+  text-decoration: none;
+  color: var(--text-black-700);
+}
+
+.about .about-content .personal-info .info-item p span a {
+  color: var(--skin-color);
 }
 
 .about .about-content .personal-info .buttons {
@@ -621,19 +646,59 @@ h3.my-profession {
 
 .portfolio .portfolio-item-inner {
   border: 6px solid var(--bg-black-100);
+  /* height: 700px; */
+  /* background-color: #3e8167; */
+  background-color: var(--bg-black-100);
+  /* opacity: 0.5; */
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
-  width: fit-content;
+  width: 80%;
+  /* height: 25rem; */
+  transition: 0.5s ease;
 }
 
 .portfolio .portfolio-item-inner .portfolio-img img {
   flex: 0 0 100%;
-  max-width: 100%;
+  width: 100%;
   display: block;
   padding: 5px;
   border-radius: 10px;
   height: 250px;
+}
+
+.portfolio .portfolio-item-inner .project-details {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.portfolio .portfolio-item-inner .project-details span {
+  color: var(--skin-color);
+  font-weight: 600;
+}
+
+.portfolio .portfolio-item-inner .project-details p {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--skin-color);
+}
+
+.portfolio .portfolio-item-inner .project-details .icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.portfolio .portfolio-item-inner .project-details .icons a {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--skin-color);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.portfolio .portfolio-item-inner .project-details .icons a i {
+  margin-right: 5px;
 }
 
 .portfolio .portfolio-item .portfolio-text i {
@@ -741,7 +806,7 @@ h3.my-profession {
 
 @media (max-width: 1199px) {
   .aside {
-    left: -270px;
+    display: none;
   }
   .main-content {
     padding-left: 0;
@@ -762,11 +827,15 @@ h3.my-profession {
   .home .home-info {
     flex: 0 0 100%;
     max-width: 100%;
+    margin-bottom: 80px;
+  }
+  .about .about-content .about-text {
+    display: block;
   }
 
-  .home .home-img {
+  /* .home .home-img {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 767px) {
